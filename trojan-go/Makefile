@@ -92,7 +92,7 @@ define Package/trojan-go/install
 	$(CP) $(DL_DIR)/dlc.dat $(1)/opt/share/trojan-go/geosite.dat
 endef
 
-Package/rclone_nohf/install=$(Package/trojan-go/install)
+Package/trojan_nohf/install=$(Package/trojan-go/install)
 
 $(eval $(call BuildPackage,trojan-go))
 $(eval $(call BuildPackage,trojan-go_nohf))
